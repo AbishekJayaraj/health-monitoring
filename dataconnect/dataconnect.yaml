@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "health-monitoring"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "health-monitoring-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
